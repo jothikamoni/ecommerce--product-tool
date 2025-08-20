@@ -1,0 +1,28 @@
+# main.py
+
+from models import Category, Attribute, Product
+
+# Create Categories
+smartphone = Category(1, "Smartphones", "Electronic devices")
+watch = Category(2, "Watches", "Wearable devices")
+
+# Add Attributes
+ram = Attribute(1, 1, "RAM", "string")
+battery = Attribute(2, 1, "Battery Size", "string")
+dial_color = Attribute(3, 2, "Dial Color", "string")
+
+smartphone.add_attribute(ram)
+smartphone.add_attribute(battery)
+watch.add_attribute(dial_color)
+
+# Create Products
+p1 = Product(1, smartphone, "iPhone 15", 1200)
+p1.set_attribute_value(ram, "8GB")
+p1.set_attribute_value(battery, "4000mAh")
+
+p2 = Product(2, watch, "Fossil Watch", 300)
+p2.set_attribute_value(dial_color, "Black")
+
+# Print Output
+print(p1)
+print(p2)
