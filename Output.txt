@@ -1,0 +1,2 @@
+Product(iPhone 15, Smartphones, 1200, {'RAM': '8GB', 'Battery Size': '4000mAh'})
+Product(Fossil Watch, Watches, 300, {'Dial Color': 'Black'})
