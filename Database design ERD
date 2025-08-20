@@ -1,0 +1,4 @@
+Category (id, name, description)
+Attribute (id, category_id, name, datatype)
+Product (id, category_id, name, price)
+ProductAttributeValue (id, product_id, attribute_id, value)
